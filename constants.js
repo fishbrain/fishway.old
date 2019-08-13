@@ -3,12 +3,12 @@ import * as d3 from 'd3'
 
 export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
   'PROJECT_MANAGEMENT' | 'COMMUNICATION' | 'CRAFT' | 'INITIATIVE' |
-  'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'WELLBEING' | 'ACCOMPLISHMENT' |
+  'CAREER_DEVELOPMENT' | 'ORG_DESIGN' | 'TEAMS_GROWTH' | 'ACCOMPLISHMENT' |
   'MENTORSHIP' | 'EVANGELISM' | 'RECRUITING' | 'COMMUNITY'
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
-  'MOBILE': Milestone,
+  // 'MOBILE': Milestone,
   'WEB_CLIENT': Milestone,
   'FOUNDATIONS': Milestone,
   'SERVERS': Milestone,
@@ -18,7 +18,7 @@ export type MilestoneMap = {
   'INITIATIVE': Milestone,
   'CAREER_DEVELOPMENT': Milestone,
   'ORG_DESIGN': Milestone,
-  'WELLBEING': Milestone,
+  'TEAMS_GROWTH': Milestone,
   'ACCOMPLISHMENT': Milestone,
   'MENTORSHIP': Milestone,
   'EVANGELISM': Milestone,
@@ -81,7 +81,7 @@ type Tracks = {|
   'INITIATIVE': Track,
   'CAREER_DEVELOPMENT': Track,
   'ORG_DESIGN': Track,
-  'WELLBEING': Track,
+  'TEAMS_GROWTH': Track,
   'ACCOMPLISHMENT': Track,
   'MENTORSHIP': Track,
   'EVANGELISM': Track,
@@ -491,74 +491,6 @@ export const tracks: Tracks = {
       ],
     }],
   },
-
-  "CRAFT": {
-    "displayName": "Craft",
-    "category": "B",
-    "description": "Embodies and promotes practices to ensure excellent quality products and services",
-    "milestones": [{
-      "summary": "Delivers consistently good quality work",
-      "signals": [
-        "Tests new code thoroughly, both locally, and in production once shipped",
-        "Writes tests for every new feature and bug fix",
-        "Writes clear comments and documentation",
-      ],
-      "examples": [
-        "Caught a bug on Hatch before it went live",
-        "Landed non-trivial PR with no caretaker comments",
-        "Wrote hermetic tests for the happy and sad cases",
-      ],
-    }, {
-      "summary": "Increases the robustness and reliability of codebases, and devotes time to polishing products and systems",
-      "signals": [
-        "Refactors existing code to make it more testable",
-        "Adds tests for uncovered areas",
-        "Deletes unnecessary code and deprecates proactively when safe to do so",
-      ],
-      "examples": [
-        "Requested tests for a PR when acting as reviewer",
-        "Reduced the number of zelda fitzgerald exceptions",
-        "Fixed a TODO for someone else in the codebase",
-      ],
-    }, {
-      "summary": "Improves others' ability to deliver great quality work",
-      "signals": [
-        "Implements systems that enable better testing",
-        "Gives thoughtful code reviews as a domain expert",
-        "Adds tooling to improve code quality",
-      ],
-      "examples": [
-        "Improved PRB to run the same volume of tests faster",
-        "Simplified hermetic test data modification",
-        "Created fixture system for visual quality",
-      ],
-    }, {
-      "summary": "Advocates for and models great quality with proactive actions, and tackles difficult and subtle system issues",
-      "signals": [
-        "Builds systems so as to eliminate entire classes of programmer error",
-        "Focuses the team on quality with regular reminders",
-        "Coordinates Watch priorities and projects",
-      ],
-      "examples": [
-        "Added code coverage reporting to iOS CI pipeline",
-        "Iterated repeatedly to develop Medium's underlines solution",
-        "Defined and oversaw plan for closing Heartbleed vulnerability",
-      ],
-    }, {
-      "summary": "Enables and encourages the entire organization to make quality a central part of the development process",
-      "signals": [
-        "Defines policies for the engineering org that encourage quality work",
-        "Identifies and eliminates single points of failure throughout the organization",
-        "Secures time and resources from execs to support great quality",
-      ],
-      "examples": [
-        "Negotiated resources for Fix-It week with exec team",
-        "Instituted and ensured success of a 20% time policy",
-        "Started The Watch",
-      ],
-    }],
-  },
-
   "INITIATIVE": {
     "displayName": "Initiative",
     "category": "B",
@@ -760,8 +692,8 @@ export const tracks: Tracks = {
     }],
   },
 
-  "WELLBEING": {
-    "displayName": "Wellbeing",
+  "TEAMS_GROWTH": {
+    "displayName": "Teams Growth",
     "category": "C",
     "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
     "milestones": [{
@@ -823,73 +755,6 @@ export const tracks: Tracks = {
         "Converted group member from a problem haver to a problem solver",
         "Challenged false narrative and redirected to compassion and empathy",
         "Cultivated and championed a culture of empathy within the entire team",
-      ],
-    }],
-  },
-
-  "ACCOMPLISHMENT": {
-    "displayName": "Accomplishment",
-    "category": "C",
-    "description": "Inspires day to day excellence, maximises potential and effectively resolves performance issues with compassion",
-    "milestones": [{
-      "summary": "Helps individuals identify blockers and helps them identify next steps for resolution",
-      "signals": [
-        "Notices when someone is stuck and reaches out",
-        "Helps others break down problems into feasible, tangible next steps",
-        "Talks through problems non-judgmentally",
-      ],
-      "examples": [
-        "Completed training on diagnosing problems",
-        "Unblocked a group member",
-        "Reinforces and affirms positive feedback for good work",
-      ],
-    }, {
-      "summary": "Helps individuals resolve difficult performance issues, with insight, compassion, and skill",
-      "signals": [
-        "Gathers context outside the immediate problem",
-        "Recognizes issues within local environment and suggests change",
-        "Works to encourage ownership of actions and responsibilities",
-      ],
-      "examples": [
-        "Completed training on decision making",
-        "Convinced a group member to solve a problem directly, rather than doing it for them",
-        "Gave honest feedback about poor performance, with compassion",
-      ],
-    }, {
-      "summary": "Intervenes in long-standing performance issues with targeted behavior change or performance plans",
-      "signals": [
-        "Aggregates signals of poor performance and creates process for improvement",
-        "Investigates motivation and externalities for consistent poor performance",
-        "Puts together comprehensive, achievable performance plans",
-      ],
-      "examples": [
-        "Worked with group member to address persistent communication failures",
-        "Arranged a transfer to another team, resulting in improved performance",
-        "Managed group member closely to maximise chances of PIP success",
-      ],
-    }, {
-      "summary": "Mediates escalated situations, empowers underperforming teams, and resolves conflict",
-      "signals": [
-        "Recognizes heightened situations and toxic or aggressive interactions",
-        "Inserts themself into conflict where appropriate to calm and mediate",
-        "Encourages open dialog and builds trust between parties in conflict",
-      ],
-      "examples": [
-        "Empowered a team to drive forward amidst uncertainty",
-        "Protected team from externalities so they could focus on goals",
-        "Mediated sit-down between team members to address tension",
-      ],
-    }, {
-      "summary": "Resolves complex organizational dysfunction, or persistent conflict at senior levels",
-      "signals": [
-        "Takes control of dysfunctional teams to organise chaos",
-        "Repairs broken team dynamics and builds harmony",
-        "Presides over a well-oiled team of teams",
-      ],
-      "examples": [
-        "Turned around the performance of a problematic team",
-        "De-escalated serious tensions between teams",
-        "Rebuilt trust between senior team leads",
       ],
     }],
   },
@@ -1095,72 +960,6 @@ export const tracks: Tracks = {
     }],
   },
 
-  "COMMUNITY": {
-    "displayName": "Community",
-    "category": "D",
-    "description": "Builds community internally, gives of themself to the team, and champions and extols company values",
-    "milestones": [{
-      "summary": "Is available and present on current teams, and works to contribute positively to company culture",
-      "signals": [
-        "Participates in team activities and offsites",
-        "Treats colleagues and clients with respect",
-        "Joins groups or committees outside regular duties",
-      ],
-      "examples": [
-        "Joined and actively participated in the web client guild",
-        "Brought a small gift back from vacation for the team",
-        "Wrote entertaining and informative Prod Ops writeups on Hatch",
-      ],
-    }, {
-      "summary": "Steps up, builds connectedness, and takes concrete actions to promote an inclusive culture",
-      "signals": [
-        "Makes space for others to participate",
-        "Collaborates with other engineers outside direct responsibilities",
-        "Finds ways to ramp up and engage new hires quickly",
-      ],
-      "examples": [
-        "Created onboarding bingo",
-        "Brought shy and introverted people into a dominant conversation",
-        "Volunteered as secretary for a team",
-      ],
-    }, {
-      "summary": "Contributes to improving team relatedness, and helps build a culture of lending support",
-      "signals": [
-        "Takes on additional Watch shifts at short notice",
-        "Pitches in to help other teams hit deadlines, without missing own deadlines",
-        "Uses position to raise difficult issues on someone's behalf",
-      ],
-      "examples": [
-        "Lead Watch cycles with little support while still contributing to projects",
-        "Started and drove the LGBTQIA ERG",
-        "Stayed positive and improved team morale during period after layoffs",
-      ],
-    }, {
-      "summary": "Exemplifies selflessness for the team without compromising responsibilities, and lifts everyone up",
-      "signals": [
-        "Goes above and beyond on the Watch, serving the team without complaint",
-        "Implements concrete programs to signficantly improve team inclusivity",
-        "Takes on large amounts of tedious grunt work for the team without being asked",
-      ],
-      "examples": [
-        "Devoted large amount of time to helping outside direct responsibilities",
-        "Refactored hundreds of legacy Shepherd nodes",
-        "Acted as sole maintainer of Boxen for years",
-      ],
-    }, {
-      "summary": "Lives the company values, guards positive culture, and defines policies that support relatedness between teams",
-      "signals": [
-        "Brings separate teams together to build relatedness",
-        "Holds individuals, teams, and leadership accountable to Medium's values",
-        "Sets the tone, policy, and goals around maintaining an inclusive company",
-      ],
-      "examples": [
-        "Organized wine and olive tasting offsite to Napa for the whole engineering org",
-        "Devised, delivered and acted on findings from an engineer happiness survey",
-        "Challenged and corrected exclusionary behaviour or policies",
-      ],
-    }],
-  },
 }
 
 export const trackIds: TrackId[] = Object.keys(tracks)

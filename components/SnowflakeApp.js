@@ -56,16 +56,13 @@ const emptyState = (): SnowflakeAppState => {
       'SERVERS': 0,
       'PROJECT_MANAGEMENT': 0,
       'COMMUNICATION': 0,
-      'CRAFT': 0,
       'INITIATIVE': 0,
       'CAREER_DEVELOPMENT': 0,
       'ORG_DESIGN': 0,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 0,
+      'TEAMS_GROWTH': 0,
       'MENTORSHIP': 0,
       'EVANGELISM': 0,
       'RECRUITING': 0,
-      'COMMUNITY': 0
     },
     focusedTrackId: 'MOBILE'
   }
@@ -82,16 +79,13 @@ const defaultState = (): SnowflakeAppState => {
       'SERVERS': 2,
       'PROJECT_MANAGEMENT': 4,
       'COMMUNICATION': 1,
-      'CRAFT': 1,
       'INITIATIVE': 4,
       'CAREER_DEVELOPMENT': 3,
       'ORG_DESIGN': 2,
-      'WELLBEING': 0,
-      'ACCOMPLISHMENT': 4,
+      'TEAMS_GROWTH': 0,
       'MENTORSHIP': 2,
       'EVANGELISM': 2,
       'RECRUITING': 3,
-      'COMMUNITY': 0
     },
     focusedTrackId: 'MOBILE'
   }
@@ -157,7 +151,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
         `}</style>
         <div style={{margin: '19px auto 0', width: 142}}>
           <a href="https://medium.com/" target="_blank">
-            <Wordmark />
+            <h1>Fishbrain</h1>
           </a>
         </div>
         <div style={{display: 'flex'}}>
