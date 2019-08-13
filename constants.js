@@ -103,31 +103,33 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Added existing button to a different iOS surface",
-        "Add follow button for publications on Android",
-        "Fetched and displayed a new stream, using existing stream item styles",
+        "Add follow button for a Ui item on Android",
+        "Fetched and displayed a new list of items, reusing existing list item styles",
       ],
     }, {
       "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
       "signals": [
-        "Defines new useful and appropriate proto-generated objects",
-        "Creates simple new activities on Android",
+        "Defines new useful and appropriate models",
+        "Creates simple new features on Android, by following the existing guidelines",
         "Migrates code from old patterns to new patterns",
       ],
       "examples": [
-        "Upgraded SDWebImage to a new major version",
-        "Added support for rendering a new type of stream item",
+        "Upgraded Mapbox to a new major version",
+        "Added support for rendering a new type of item",
         "Prototyped a simple new feature quickly",
       ],
     }, {
       "summary": "Designs major new features and demonstrates a nuanced understanding of mobile platform constraints",
       "signals": [
         "Implements complex features with a large product surface area",
-        "Works effectively with  Android reactive programming framework",
+        "Works effectively with Android coroutines framework",
         "Adds support for new iOS features after a major iOS version upgrade",
+        "Introduces CI/CD upgrades and additions to the current setup",
+        "Works effectively with reactive programming techniques"
       ],
       "examples": [
-        "Designed iOS caching strategy for offline reading",
-        "Built series reader on Android",
+        "Designed iOS caching strategy for offline content",
+        "Built a reusable component on Android",
         "Informed the team about recent best practice changes and deprecations",
       ],
     }, {
@@ -138,9 +140,9 @@ export const tracks: Tracks = {
         "Implements interactive dismissals that bring delight",
       ],
       "examples": [
-        "Upgraded CocoaPods to a new major version",
-        "Designed architecture for fetching and rendering stream items",
-        "Migrated Android persistance layer to reactive programming",
+        "Migrated code into a separate framework to be used in other platforms (watchOS, tvOS, etc)",
+        "Designed an architecture for fetching and rendering items",
+        "Introduced a local database support for caching",
       ],
     }, {
       "summary": "Is an industry-leading expert in mobile engineering or sets strategic mobile direction for an eng team",
@@ -160,30 +162,30 @@ export const tracks: Tracks = {
   "WEB_CLIENT": {
     "displayName": "Web client",
     "category": "A",
-    "description": "Develops expertise in web client technologies, such as HTML, CSS, and JavaScript",
+    "description": "Develops expertise in web client technologies, such as HTML, CSS, and JavaScript/Typescript",
     "milestones": [{
       "summary": "Works effectively within established web client architectures, following current best practices",
       "signals": [
         "Makes minor modifications to existing screens",
         "Fixes simple design quality issues",
         "Uses CSS appropriately, following style guide",
+        "Uses semantic HTML and considers SEO implications of changes",
+        "Writes unit tests to cover atomic functions",
       ],
       "examples": [
-        "Implemented sticky footer on the post page",
-        "Hooked up the action to dismiss a post from a stream",
-        "Built PaymentHistory screen using ResponseScreen",
+        "Implemented sticky cookie banner",
       ],
     }, {
       "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
       "signals": [
-        "Makes sensible abstractions based on template and code patterns",
+        "Makes sensible abstractions based on code patterns",
         "Specs and builds interactive components independently",
         "Prototypes simple new features quickly",
+        "Writes tests that are based on user behaviours, not developer implementations",
       ],
       "examples": [
-        "Built credit card input component",
-        "Created shared buttons template",
-        "Built modal system",
+        "Built premium purchase component",
+        "Created shared button components",
       ],
     }, {
       "summary": "Designs major new features and demonstrates a nuanced understanding of browser constraints",
@@ -191,11 +193,12 @@ export const tracks: Tracks = {
         "Provides useful design feedback and suggests feasible alternatives",
         "Performs systemic tasks to significantly minimise bundle size",
         "Acts a caretaker for all of web client code",
+        "Considers accessibility issues when implementing features",
       ],
       "examples": [
-        "Designed font loading strategy for Medium",
-        "Researched utility of service workers for Medium",
-        "Designed and implemented ResponseScreen",
+        "Introduced changes that consistently improve the search ranking of Fishbrain properties",
+        "Researched utility of service workers for Fishbrain",
+        "Designed and implemented the Catch Map on the web",
       ],
     }, {
       "summary": "Builds complex, reusable architectures that pioneer best practices and enable engineers to work more effectively",
@@ -203,11 +206,11 @@ export const tracks: Tracks = {
         "Pioneers architecture migrations that reduce programmer burden",
         "Implements complex UI transitions that bring delight",
         "Makes architectural decisions that eliminate entire classes of bugs",
+        "Uses cutting-edge technologies (e.g. webassembly, webGL) to solve problems previously considered unsolveable",
       ],
       "examples": [
-        "Designed Medium's post morpher and delta system",
-        "Implemented Medium's scrolling text over image blur",
-        "Designed and pioneered proto-based model storage",
+        "Introduced data caching strategies to improve overall client performance",
+        "Implemented end-to-end testing of the web client",
       ],
     }, {
       "summary": "Is an industry-leading expert in web client or sets strategic web client direction for an eng team",
@@ -215,11 +218,11 @@ export const tracks: Tracks = {
         "Invents new techniques to innovate and overcome browser constraints",
         "Identifies and solved systemic problems with current architecture",
         "Defines a long-term vision for web client and ensures projects are in service of it",
+        "Designs and builds innovative, industry-leading UI interactions",
       ],
       "examples": [
-        "Invented CSS in JS",
-        "Defined and drove migration strategy to Lite",
-        "Implemented unidirectional data flow to completion",
+        "Created a tool or framework that changes how developers solve problems (e.g. CSS-in-JS, React Testing Library, Rollup)",
+        "Defined and drove migration strategy to a new software design paradigm",
       ],
     }],
   },
@@ -231,26 +234,26 @@ export const tracks: Tracks = {
     "milestones": [{
       "summary": "Works effectively within established structures, following current best practices",
       "signals": [
-        "Writes thorough postmortems for service outages",
+        "Writes thorough postmortems for service/integration outages",
         "Makes simple configuration changes to services",
-        "Performs backfills safely and effectively, without causing pages",
+        "Performs backfills safely and effectively, without causing disruptions in related flows",
+        "Knows how to navigate infrastructure and deployments as well as how to make modifications",
       ],
       "examples": [
-        "Made safe and effective Ansible changes",
         "Implemented new ETL pipelines based on existing ones",
-        "Resolved out of disk errors independently",
+        "Took active part in resolving less involved production issue in own component",
       ],
     }, {
       "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
       "signals": [
-        "Made minor version upgrades to technologies",
         "Builds machine learning jobs within the ML framework",
         "Triages service issues correctly and independently",
       ],
       "examples": [
-        "Upgraded NodeJS from 8.0 to 8.1.1",
-        "Built custom packages for RPMs",
-        "Improved ETL efficiency by improving Dynamo to S3 loading",
+        "Made minor version upgrades to technologies",
+        "Upgraded Terraform",
+        "Create deployment setup for new system mimicking similar existing system",
+        "Upgraded ETL efficiency by improving Dynamo to S3 loading",
       ],
     }, {
       "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
@@ -260,8 +263,8 @@ export const tracks: Tracks = {
         "Makes major version upgrades to libraries",
       ],
       "examples": [
-        "Designed Ansible configuration management",
-        "Built Medium's realtime stats pipeline",
+        "Designed terraform configuration for a new non-existing service",
+        "Implemented new ETL pipeline framework",
         "Designed flexible framework for writing machine learning jobs",
       ],
     }, {
@@ -272,9 +275,8 @@ export const tracks: Tracks = {
         "Introduces new databases and technologies to meet underserved needs",
       ],
       "examples": [
-        "Designed and built BBFD",
         "Designed AWS configuration management",
-        "Introduced Kinesis and pioneered streaming events pipeline",
+        "Take events from batch to stream",
       ],
     }, {
       "summary": "Is an industry-leading expert in foundational engineering or sets strategic foundational direction for an eng team",
@@ -285,8 +287,6 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Invented a novel ML technique that advanced the state of the art",
-        "Defined and developed Medium's continuous delivery strategy",
-        "Developed and implemented HA strategy",
       ],
     }],
   },
@@ -294,54 +294,55 @@ export const tracks: Tracks = {
   "SERVERS": {
     "displayName": "Servers",
     "category": "A",
-    "description": "Develops expertise in server side engineering, using technologies such as Go, NodeJS, or Scala",
+    "description": "Contributed postively for the backend codebase, coding, refactoring, testing, restructuring.",
     "milestones": [{
-      "summary": "Works effectively within established server side frameworks, following current best practices",
+      "summary": "Works effectively with established server side codebase, following current best practices.",
       "signals": [
-        "Adds NodeJS endpoints using layers architecture",
-        "Adds golang endpoints using Gotham architecture",
-        "Makes minor server changes to support client needs",
+        "Knows how to follow up performance of implemented features",
+        "Changes behaviour of endpoints",
+        "Improves test quality",
+        "Adds new use cases in code",
+        "Introduces optimizations",
+        "Improves coding standards",
       ],
       "examples": [
-        "Added IFTTT trigger for new bookmark to medium2",
-        "Added delete audio route to Buggle",
-        "Queried a Dynamo LSI appropriately",
+        "-",
       ],
     }, {
-      "summary": "Develops new instances of existing architecture, or minor improvements to existing architecture",
+      "summary": "Develops new instances of existing architecture, or minor improvements, with large impact, to existing architecture",
       "signals": [
-        "Assesses correctness and utility of existing code and avoids blind copy-pasting",
-        "Generalizes code when appropriate",
+        "Consitently refactors code",
+        "Introduces internal libraries",
         "Determines data needs from product requirements",
+        "Uses knowledge of infrastructure component to introduce improvements",
+        "Tsar go-lives",
       ],
       "examples": [
-        "Identified need for new index on Dynamo",
-        "Acted as caretaker for routes protos",
-        "Updated Facebook API version and codebase dependencies",
+        "Updated a dependency while fixing breaking changes",
       ],
     }, {
-      "summary": "Designs standalone systems of moderate complexity, or major new features in existing systems",
+      "summary": "Introduces system component or new feature with major impact on business, performance or architecture",
       "signals": [
-        "Acts as primary maintainer for existing critical systems",
-        "Integrates third party services effectively",
-        "Writes playbooks for new service maintenance",
-      ],
-      "examples": [
-        "Implemented Google Auth login to Medium",
+        "Conceptualizes or implements new service",
+        "Improves handling of infrastructure for improving SLO",
         "Implemented payments integration with Stripe",
-        "Built Textshots server",
-      ],
-    }, {
-      "summary": "Builds complex, reusable architectures that pioneer best practices for other engineers, or multi-system services",
-      "signals": [
-        "Delivers complex systems that achieve their goals",
-        "Avoids subtle architectural mistakes when considering new systems",
-        "Makes appropriate buy vs build choices",
+        "Manipulates architecture to add new features or sets of features",
       ],
       "examples": [
-        "Designed Medium's ranked feed architecture",
+        "Added a new integration in a project",
+        "Added a new test harness",
+      ],
+    }, {
+      "summary": "Builds new architectures that empower new features for developers and business ideas for growing the project",
+      "signals": [
+        "Introduces new application protocols",
+        "Makes appropriate buy vs build choices",
+        "Creates new features based on unexpected requests ",
+      ],
+      "examples": [
+        "Adds new architectures to project",
+        "Designed Fishbrain's ranked feed architecture",
         "Designed custom domains architecture",
-        "Created Gotham framework for creating Go services",
       ],
     }, {
       "summary": "Is an industry-leading expert in server side engineering or sets strategic server side direction for an eng team",
@@ -351,9 +352,7 @@ export const tracks: Tracks = {
         "Identifies and solves systemic problems with current architecture",
       ],
       "examples": [
-        "Researched, vetted, and selected Go as Medium's statically typed language",
-        "Defined microservices architecture and medium2 migration plan",
-        "Defined and implemented proprietary IP core to the company's success",
+        "-",
       ],
     }],
   },
@@ -368,23 +367,23 @@ export const tracks: Tracks = {
         "Estimates small tasks accurately",
         "Delivers tightly-scoped projects efficiently",
         "Writes effective technical specs outlining approach",
+        "Clarifies desired outcome of a task before starting",
       ],
       "examples": [
-        "Wrote the technical spec for featured post images",
-        "Delivered stream item support for email digests",
-        "Delivered payment history dashboard",
+        "Delivered user details in CRM for marketing use",
+        "Created an Amplitude view to backup the usage of the new marketplace banner",
       ],
     }, {
-      "summary": "Effectively delivers small personal projects",
+      "summary": "Effectively delivers small projects (1 person)",
       "signals": [
         "Performs research and considers alternative approaches",
         "Balances pragmatism and polish appropriately",
         "Defines and hits interim milestones",
+        "Can critique approach to solve a feature with pros and cons, and suggest improvements in a constructive way",
+        "Argues for the suitable level of finish when priorities change and the feature will be paused",
       ],
       "examples": [
-        "Delivered promo editor",
-        "Delivered audio uploading for web client",
-        "Executed the recommends to claps backfill",
+        "Executed a data migration in support of a feature",
       ],
     }, {
       "summary": "Effectively delivers projects through a small team",
@@ -406,8 +405,8 @@ export const tracks: Tracks = {
         "Leverages recognition of repeated project patterns",
       ],
       "examples": [
-        "Oversaw technical delivery of Hightower",
-        "Managed infrastructure migration to VPC",
+        "Oversaw technical delivery of X",
+        "Managed infrastructure migration to chosen techinical choice",
         "Involved marketing, legal, and appropriate functions at project start",
       ],
     }, {
@@ -418,8 +417,8 @@ export const tracks: Tracks = {
         "Owns a key company metric",
       ],
       "examples": [
-        "Managed technical migration to SOA",
-        "Lead technical delivery of 10/7",
+        "Managed technical migration to cross-company affecting platform",
+        "Lead technical delivery of cross-company project",
         "Delivered multi-month engineering project on time",
       ],
     }],
@@ -433,12 +432,12 @@ export const tracks: Tracks = {
       "summary": "Communicates effectively to close stakeholders when called upon, and incorporates constructive feedback",
       "signals": [
         "Communicates project status clearly and effectively",
-        "Collaborates with others with empathy",
+        "Considers how their behaviour affects others",
         "Asks for help at the appropriate juncture",
       ],
       "examples": [
-        "Updated The Watch before running a backfill",
-        "Updated project status changes in Asana promptly",
+        "Informed the slack channel as well as the on call people before running an update in database",
+        "Updated project status changes in Jira promptly",
         "Gave thoughtful check-in and check-out comments",
       ],
     }, {
@@ -447,23 +446,23 @@ export const tracks: Tracks = {
         "Practises active listening and suspension of attention",
         "Ensures stakeholders are aware of current blockers",
         "Chooses the appropriate tools for accurate and timely communication",
+        "Highlights blockers or opportunities to cross-project teams in a constructive way",
       ],
       "examples": [
         "Received and integrated critical feedback positively",
-        "Created cross-team Slack channel for payments work",
-        "Spoke to domain experts before writing spec",
+        "Involved domain experts before writing spec",
       ],
     }, {
       "summary": "Proactively shares information, actively solicits feedback, and facilitates communication for multiple stakeholders",
       "signals": [
         "Resolves communication difficulties between others",
-        "Anticipates and shares schedule deviations in plenty of time",
+        "Anticipates and shares scheduled deviations well ahead of time",
         "Manages project stakeholder expectations effectively",
       ],
       "examples": [
         "Directed team response effectively during outages",
-        "Gave a substantial Eng All Hands presentation on React",
-        "Gave notice of upcoming related work in Eng Briefing",
+        "Gave a substantial All Hands presentation on tech challenge/improvement/failure",
+        "Gave notice of upcoming related work in Product Meeting or Engineering All Hands",
       ],
     }, {
       "summary": "Communicates complex ideas skillfully and with nuance, and establishes alignment within the wider organization",
@@ -473,87 +472,90 @@ export const tracks: Tracks = {
         "Negotiates resourcing compromises with other teams",
       ],
       "examples": [
-        "Lead off-site workshop on interviewing",
-        "Wrote Medium's growth framework and rationale",
-        "Aligned the entire organization around claps",
+        "Led a workshop on topic related to your discipline",
+        "Wrote Fishbrain's growth framework and rationale",
+        "Aligned the entire organization around a big technical challenge",
       ],
     }, {
       "summary": "Influences outcomes at the highest level, moves beyond mere broadcasting, and sets best practices for others",
       "signals": [
         "Defines processes for clear communication for the entire team",
-        "Shares the right amount of information with the right people, at the right time",
+        "Shares the right amount of information with the right people, at the right time, e.g. make sure the quarterly plan is communicated not only to direct reports, but though the whole company and affected teams",
         "Develops and delivers plans to execs, the board, and outside investors",
+        "Identifies what information is lacking throughout all the corners of the company in order for everyone to do their work",
       ],
       "examples": [
-        "Organized half year check-in company offsite",
-        "Created the communication plan for a large organizational change",
+        "Organized technical part of half year check-in company offsite",
+        "Created the communication plan for a large change within your discipline",
         "Presented to the board about key company metrics and projects",
       ],
     }],
   },
+
   "INITIATIVE": {
     "displayName": "Initiative",
     "category": "B",
     "description": "Challenges the status quo and effects positive organizational change outside of mandated work",
     "milestones": [{
-      "summary": "Identifies opportunities for organizational change or product improvements",
+      "summary": "Identifies opportunities for organizational change or product improvements while delivering consistently good quality work",
       "signals": [
-        "Writes Hatch posts about improvement opportunities",
-        "Raises meaningful tensions in tactical meetings",
-        "Asks leadership team probing questions at FAM",
+        "Tests new code thoroughly, both locally, and in production once shipped",
+        "Meaningfully raises discussions and challenges opinions in tactical meetings (sprint planning)",
+        "Asks probing questions at company wide meetings",
+        "Follows the scout rule \"leave things a bit better than you found it\", for example improves documentation according to company guidelines",
       ],
       "examples": [
-        "Wrote about problems with TTR on Hatch",
-        "Wrote about content policy problems on Hatch",
-        "Reported a site issue in Github",
+        "Proactively shared learnings in the #learning-blog",
+        "Reported a bug in the job description and found an owner suiteable for it. ",
       ],
     }, {
-      "summary": "Causes change to positively impact a few individuals or minor improvement to an existing product or service",
+      "summary": "Causes change to positively impact a few individuals or minor improvement to an existing product or service by increasing the robustness and reliability of codebases",
       "signals": [
         "Picks bugs off the backlog proactively when blocked elsewhere",
         "Makes design quality improvements unprompted",
-        "Takes on trust and safety tasks proactively when blocked elsewhere",
+        "Takes on technical debt(fixes lint issues, make code more testable) tasks proactively when blocked elsewhere",
+        "Realizes when progress is blocked by lack of clarity and proposes fixes",
       ],
       "examples": [
         "Advocated on own behalf for a change in role",
-        "Implemented flow typing for promises",
-        "Audited web client performance in Chrome and proposed fixes",
+        "Audited Ornatus for possible flows or missing features and proposed fixes",
       ],
     }, {
       "summary": "Causes change to positively impact an entire team or instigates a minor feature or service",
       "signals": [
-        "Demonstrates concepts proactively with prototypes",
-        "Fixes complicated bugs outside of regular domain",
-        "Takes ownership of systems that nobody owns or wants",
+        "Demonstrates concepts proactively with prototypes/design sketches",
+        "Fixes high impact bugs outside of regular domain",
+        "Identifies problems that nobody wants and takes ownership of them",
+        "Creates templates that makes the team more efficient",
+        "Gives thoughtful feedback as a domain expert",
+        "Focuses the team on quality with regular reminders",
       ],
       "examples": [
-        "Defined style guide to resolve style arguments",
-        "Proposed and implemented at-mentions prototype",
-        "Implemented video for Android independently, unprompted",
+        "-",
       ],
     }, {
-      "summary": "Effects change that has a substantial positive impact on the engineering organization or a major product impact",
+      "summary": "Effects change that has a substantial positive impact on the engineering organization or a major product impact by modeling great quality with proactive actions, and tackles difficult and subtle system issues",
       "signals": [
         "Champions and pioneers new technologies to solve new classes of problem",
-        "Exemplifies grit and determination in the face of persistent obstacles",
+        "Identifies a user need, leads the effort of validation with anglers and actual implemention",
         "Instigates major new features, services, or architectures",
+        "Defines guidelines in a team to encourage and faciliate quality in work",
       ],
       "examples": [
-        "Created the interviewing rubric and booklet",
-        "Implemented and secured support for native login",
-        "Migrated medium2 to mono repo and bazel",
+        "Implemented and secured support for a major technical change e.g. moving auth to Cognito",
+        "Took ownership on migrating old structure to new structure e.g. Catches -> Posts",
       ],
     }, {
-      "summary": "Effects change that has a substantial positive impact on the whole company",
+      "summary": "Effects change that has a substantial positive impact on the whole company and making quality a central part of the working process",
       "signals": [
-        "Creates a new function to solve systemic issues",
         "Galvanizes the entire company and garners buy in for a new strategy",
         "Changes complex organizational processes",
+        "Defines policies for the engineering org that encourage quality work",
+        "Identifies and eliminates single points of failure throughout the organization",
+        "Secures time and resources from execs to support great quality, company wide",
       ],
       "examples": [
-        "Migrated the organization from Holacracy",
-        "Built Medium Android prototype and convinced execs to fund it",
-        "Convinced leadership and engineering org to move to Medium Lite architecture",
+        "Led an effort to solve a systemic issue that affects the whole organisation",
       ],
     }],
   },
@@ -572,16 +574,16 @@ export const tracks: Tracks = {
       "examples": [
         "Collected and delivered feedback",
         "Discussed career options and areas of interest informally",
-        "Hosted a Floodgate Academy intern",
+        "Hosted a master thesis student from university",
       ],
     }, {
       "summary": "Formally supports and advocates for one person and provides tools to help them solve career problems",
       "signals": [
-        "Ensure a group member has an appropriate role on their team",
         "Offers effective career advice to group members, without being prescriptive",
         "Creates space for people to talk through challenges",
       ],
       "examples": [
+        "Ensure a group member has an appropriate role on their team",
         "Set up and attended regular, constructive 1:1s",
         "Provided coaching on how to have difficult conversations",
         "Taught group members the GROW model",
@@ -614,10 +616,10 @@ export const tracks: Tracks = {
       "summary": "Supports the development of a signficant part of the engineering org, and widely viewed as a trusted advisor",
       "signals": [
         "Supports and develops senior leaders",
-        "Identified leadership training opportunities for senior leadership",
         "Pushes everyone to be as good as they can be, with empathy",
       ],
       "examples": [
+        "Identified leadership training opportunities for senior leadership",
         "Provided coaching to group leads",
         "Devised Pathwise curriculum for group leads",
         "Advocated to execs for engineer development resources and programs",
@@ -649,16 +651,16 @@ export const tracks: Tracks = {
         "Advocates for improved diversity and inclusion, and proposes ideas to help",
       ],
       "examples": [
-        "Defined Frankenmeeting structure for small team",
-        "Improved Watch on-call rotation scheduling",
+        "Defined weekly planning meeting structure for small team",
+        "Improved on-call rotation scheduling",
         "Defined standard channels for inter-team communication",
       ],
     }, {
-      "summary": "Develops processes to solve ongoing organizational problems",
+      "summary": "Develops processes and programs to solve ongoing organizational problems  ",
       "signals": [
         "Creates programs that meaningfully improve organizational diversity",
         "Solves long-standing organizational problems",
-        "Reallocates resources to meet organizational needs",
+        "Reallocates people/resources to meet organizational needs",
       ],
       "examples": [
         "Developed baseline team templates for consistency",
@@ -697,62 +699,62 @@ export const tracks: Tracks = {
     "category": "C",
     "description": "Supports the emotional well-being of group members in difficult times, and celebrates their successes",
     "milestones": [{
-      "summary": "Uses tools and processes to help ensure colleagues are healthy and happy",
+      "summary": "Helping individuals in the team *",
       "signals": [
-        "Keeps confidences unless legally or morally obliged to do otherwise",
-        "Applies the reasonable person principle to others",
-        "Avoids blame and focuses on positive change",
+        "Notices when someone is stuck and reaches out",
+        "Focuses on resolving a blocker instead of focusing on who to blame",
+        "Reinforces and affirms positive feedback for good work",
       ],
       "examples": [
         "Ensured group members were taking enough vacation",
         "Put themself in another's shoes to understand their perspective",
-        "Checked in with colleague showing signs of burnout",
+        "Unblocked a group member",
       ],
     }, {
-      "summary": "Creates a positive, supportive, engaging team environment for group members",
+      "summary": "Fostering of team spirit *",
       "signals": [
-        "Sheds light on other experiences to build empathy and compassion",
         "Validates ongoing work and sustains motivation",
         "Proposes solutions when teams get bogged down or lose momentum",
+        "Recognizes issues within local environment and suggests change",
+        "Works to encourage ownership of actions and responsibilities",
       ],
       "examples": [
         "Coordinated a small celebration for a project launch",
-        "Connected tedious A|B testing project with overall company goals",
-        "Noted a team without a recent win and suggested some easy quick wins",
+        "Gave honest feedback about poor performance, with compassion",
       ],
     }, {
-      "summary": "Manages expectations across peers, leads in the org, promotes calm, and prevents consensus building",
+      "summary": "Lifting Team members *",
       "signals": [
-        "Trains group members to separate stimulus from response",
         "Maintains a pulse on individual and team morale",
+        "Aggregates signals of poor performance and creates process for improvement",
         "Helps group members approach problems with curiosity",
+        "Investigates motivation and externalities for consistent poor performance",
       ],
       "examples": [
-        "Completed training on transference and counter transference",
         "Completed training on compromise and negotiation techniques",
-        "Reframed a problem as a challenge, instead of a barrier, when appropriate",
+        "Worked with group member to address persistent communication failures",
       ],
     }, {
       "summary": "Advocates for the needs of teams and group members, and proactively works to calm the organization",
       "signals": [
         "Ensures team environments are safe and inclusive, proactively",
-        "Grounds group member anxieties in reality",
-        "Tracks team retention actively and proposes solutions to strengthen it",
+        "Relieved org tension around product direction by providing extra context",
+        "Recognizes heightened situations and toxic or aggressive interactions",
       ],
       "examples": [
-        "Relieved org tension around product direction by providing extra context",
+        "Empowered a team to drive forward amidst uncertainty",
         "Encouraged group members to focus on what they can control",
-        "Guided people through complex organizational change",
+        "Protected team from externalities so they could focus on goals",
       ],
     }, {
-      "summary": "Manages narratives, channels negativity into inspiration and motivation, and protects the entire team",
+      "summary": "Org level.../ cross team *",
       "signals": [
         "Recognizes and points out narratives when appropriate",
-        "Works to reshape narratives from victimization to ownership",
-        "Increases the psychological safety of the entire team",
+        "Takes control of dysfunctional teams to organise chaos",
+        "Repairs broken team dynamics and builds harmony",
       ],
       "examples": [
-        "Converted group member from a problem haver to a problem solver",
+        "Turned around the performance of a problematic team",
         "Challenged false narrative and redirected to compassion and empathy",
         "Cultivated and championed a culture of empathy within the entire team",
       ],
@@ -785,34 +787,34 @@ export const tracks: Tracks = {
       "examples": [
         "Shared interesting article with a team member to help with their growth",
         "Offered unprompted feedback to help growth, with empathy",
-        "Lead from behind to support someone new to a leadership role",
+        "Lead from behind to support someone new to a role",
       ],
     }, {
-      "summary": "Teaches small groups of engineers and contributes to Medium's shared knowledge base",
+      "summary": "Teaches small groups of engineers and contributes to Fishbrain's shared knowledge base",
       "signals": [
         "Avoids siloing information when it can be usefully shared with others",
-        "Works to increase the bus factor of systems",
+        "Contributes AB test findings to our learning slack channel",
         "Finds tools that work best for a team member's personality",
       ],
       "examples": [
-        "Gave a brown bag presentation on payments",
-        "Wrote Hatch post on avoiding RDS backfill issues",
-        "Wrote Medium-U content module",
+        "Gave a show and tell session during platform meeting to highlight new tools that you have built",
+        "Gave a lunch time presentation on our machine learning effort",
+        "Created an internal StackOverflow site",
       ],
     }, {
       "summary": "Encourages people to mentor each other, and creates ways for them to do so",
       "signals": [
-        "Defines an entire curriculum for a discipline",
-        "Draws positive attention to well-modeled mentor and teaching behaviours",
         "Creates brown bag series and lines up speakers",
+        "Draws positive attention to well-modeled mentor and teaching behaviours",
+        "Highlights engineer's strength and the benefit of improving a particular skillset in the group",
       ],
       "examples": [
-        "Created and lead Medium's Women in Eng group",
-        "Organized an Eng All Hands with an outside speaker",
-        "Designed and taught web client guild curriculum",
+        "Have a quarterly feedback session for Android engineers that brings forward individual strengths that can be mentored to others",
+        "Created and lead Fishbrain's Women in Eng group (or an ERG of your discipline (employee resource group))",
+        "Organized a guild All Hands with an outside speaker",
       ],
     }, {
-      "summary": "Instills and promotes a culture of learning and development within the team",
+      "summary": "Instills and promotes a culture of learning and development within the entire engineering team ",
       "signals": [
         "Sets incentive structures to recognise and reward mentorship",
         "Empowers team members to develop themselves",
@@ -829,66 +831,66 @@ export const tracks: Tracks = {
   "EVANGELISM": {
     "displayName": "Evangelism",
     "category": "D",
-    "description": "Promotes Medium to the outside world and establishes it as an attractive and thoughtful place to work",
+    "description": "Promotes Fishbrain to the outside world and establishes it as an attractive and thoughtful place to work",
     "milestones": [{
-      "summary": "Represents Medium well externally, and influences individuals positively",
+      "summary": "Represents Fishbrain well externally, and influences individuals positively",
       "signals": [
         "Shares personal and organizational successes with their network",
-        "Attends Medium-hosted events and talks with guests",
+        "Attends Fishbrain-hosted events and talks with guests",
         "Communicates genuine and honest excitement about their work externally",
       ],
       "examples": [
-        "Shared a Medium product launch post on Facebook",
+        "Shared a Fishbrain product launch post on social media",
         "Acted as a guide for a non-friend visitor to the office",
         "Supported PR efforts by giving a quote or having a photo taken",
       ],
     }, {
       "summary": "Participates more centrally in small events, and takes simple actions that positively influence groups of people",
       "signals": [
-        "Takes meaningful action to introduce people to Medium",
-        "Joined public Slack group and represented Medium appropriately, and well",
-        "Organizes positive small- or medium-sized events that bring people to Medium",
+        "Takes meaningful action to introduce people to Fishbrain",
       ],
       "examples": [
-        "Volunteered as a helper for CODE2040 writing workshop",
+        "Joined public Slack group and represented Fishbrain appropriately, and well",
+        "Organizes positive small- or medium-sized events that bring people to Fishbrain",
+        "Volunteered as a helper for GraphQL workshop",
         "Organized a short tour of the office by college students",
-        "Talked at a Women Who Code event hosted at Medium",
+        "Talked at a Women Who Code event hosted at Fishbrain",
       ],
     }, {
-      "summary": "Works hard to positively influence large groups of people on their views of Medium",
+      "summary": "Works hard to positively influence large groups of people on their views of Fishbrain",
       "signals": [
         "Mentors or participates in a high visibility way in an external organization",
         "Builds fruitful partnerships with external organizations",
-        "Writes blog posts about Medium that receive moderate traffic",
+        "Writes blog posts about Fishbrain that receive moderate traffic",
       ],
       "examples": [
-        "Represented Medium on a panel at a conference of industry experts",
+        "Represented Fishbrain on a panel at a conference of industry experts",
         "Established close ties with Creative Commons",
-        "Built a durable, long-standing relationship with Code2040",
+        "Built a durable, long-standing relationship with GraphQL",
       ],
     }, {
-      "summary": "Establishes Medium as an great, innovative company and workplace to the whole industry",
+      "summary": "Establishes Fishbrain as an great, innovative company and workplace to the whole industry",
       "signals": [
         "Establishes themself as an industry thought leader who attracts talent",
-        "Publishes material about Medium's organizational or technical innovations",
-        "Leverages significant following to evangelise Medium",
+        "Publishes material about Fishbrain's organizational or technical innovations",
+        "Leverages significant following to evangelise Fishbrain",
       ],
       "examples": [
-        "Published a paper on Medium technology in a peer-reviewed journal",
-        "Authored joint-press release with EFF on DNT",
-        "Published “Why Content Editable Is Terrible” on the Medium engineering blog",
+        "Gets invited to panels/conferences to share Fishbrain's view on discipline topics",
+        "Published a paper on Fishbrain technology in a peer-reviewed journal",
+        "Published \"TDD is the way forward\" on the Fishbrain engineering blog",
       ],
     }, {
-      "summary": "Introduces Medium in a positive light to a wider audience outside the industry",
+      "summary": "Introduces Fishbrain in a positive light to a wider audience outside the industry",
       "signals": [
         "Delivers key messages to broad, mainstream audiences",
-        "Influences people with large audiences to talk about Medium positively",
-        "Drives recognition and adoption of Medium in significant numbers",
+        "Influences people with large audiences to talk about Fishbrain positively",
+        "Drives recognition and adoption of Fishbrain in significant numbers",
       ],
       "examples": [
         "Published or interviewed in a mainstream newspaper or website outside tech",
         "Keynoted a conference with international attention",
-        "Represented Medium in national televised media",
+        "Represented Fishbrain in national televised media",
       ],
     }],
   },
@@ -896,9 +898,9 @@ export const tracks: Tracks = {
   "RECRUITING": {
     "displayName": "Recruiting",
     "category": "D",
-    "description": "Strengthens Medium's team by bringing in excellent staff members",
+    "description": "Strengthens Fishbrain's team by bringing in excellent staff members",
     "milestones": [{
-      "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Medium",
+      "summary": "Brings new candidates into the pipeline and understands how to evaluate candidates at Fishbrain",
       "signals": [
         "Reviews existing network for hiring leads regularly",
         "Shadows interviews to gain familiarity with process",
@@ -918,7 +920,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Added observable evidence for every rating",
-        "Started a monthly brunch for candidates to meet Medium employees",
+        "Provided very honest feedback for both the hiring committee and the candidate",
         "Tested a new service for quality and diversity of candidates",
       ],
     }, {
@@ -942,8 +944,8 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Planned engineering summit on interview process and training",
-        "Organized and lead Medium's presence at a recruitment fair",
-        "Started CODE2040 internship program",
+        "Organized and lead Fishbrain's presence at a recruitment fair",
+        "Started and run Fishbrain internship program",
       ],
     }, {
       "summary": "Sets recruitment strategy, invests in long-term relationships for critical roles, and recruits at scale",
@@ -954,7 +956,7 @@ export const tracks: Tracks = {
       ],
       "examples": [
         "Talked with a senior candidate over many months to fill a critical role",
-        "Organized efforts around convincing acquired engineers to join and stay",
+        "Organized half yearly Android retro lunch to highlight achievements and learnings for the past 6 months, illustrating the progress that has been made",
         "Set goals, then tracked and reported metrics on team demographics over time",
       ],
     }],
