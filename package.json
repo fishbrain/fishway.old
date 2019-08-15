@@ -1,8 +1,8 @@
 {
-  "name": "eng-growth",
+  "name": "fishbrain-fishway",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/Medium/eng-growth",
+  "repository": "https://https://github.com/fishbrain/fishway",
   "license": "MIT",
   "dependencies": {
     "d3": "^4.11.0",

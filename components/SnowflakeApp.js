@@ -4,13 +4,13 @@ import TrackSelector from '../components/TrackSelector'
 import NightingaleChart from '../components/NightingaleChart'
 import KeyboardListener from '../components/KeyboardListener'
 import Track from '../components/Track'
-import Wordmark from '../components/Wordmark'
 import LevelThermometer from '../components/LevelThermometer'
 import { eligibleTitles, trackIds, milestones, milestoneToPoints } from '../constants'
 import PointSummaries from '../components/PointSummaries'
 import type { Milestone, MilestoneMap, TrackId } from '../constants'
 import React from 'react'
 import TitleSelector from '../components/TitleSelector'
+import Wordmark from './Wordmark'
 
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
@@ -70,7 +70,7 @@ const emptyState = (): SnowflakeAppState => {
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: 'Cersei Lannister',
+    name: 'Jane Roe',
     title: 'Staff Engineer',
     milestoneByTrack: {
       'MOBILE': 1,
@@ -149,9 +149,10 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             text-decoration: none;
           }
         `}</style>
-        <div style={{margin: '19px auto 0', width: 142}}>
-          <a href="https://medium.com/" target="_blank">
-            <h1>Fishbrain</h1>
+        <div>
+          <a href="https://fishbrain.com/" target="_blank" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+            <Wordmark />
+            <h1 style={{ marginLeft: '0.25em', marginTop: '22px', color: '#000' }}>Fishway</h1>
           </a>
         </div>
         <div style={{display: 'flex'}}>
