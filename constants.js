@@ -8,7 +8,7 @@ export type TrackId = 'MOBILE' | 'WEB_CLIENT' | 'FOUNDATIONS' | 'SERVERS' |
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
 export type MilestoneMap = {
-  // 'MOBILE': Milestone,
+  'MOBILE': Milestone,
   'WEB_CLIENT': Milestone,
   'FOUNDATIONS': Milestone,
   'SERVERS': Milestone,
@@ -294,7 +294,7 @@ export const tracks: Tracks = {
   "SERVERS": {
     "displayName": "Servers",
     "category": "A",
-    "description": "Contributed postively for the backend codebase, coding, refactoring, testing, restructuring.",
+    "description": "Contributed postively to the backend codebase through coding, refactoring, testing, and restructuring.",
     "milestones": [{
       "summary": "Works effectively with established server side codebase, following current best practices.",
       "signals": [
@@ -438,12 +438,12 @@ export const tracks: Tracks = {
       "examples": [
         "Informed the slack channel as well as the on call people before running an update in database",
         "Updated project status changes in Jira promptly",
-        "Gave thoughtful check-in and check-out comments",
+        "Gave thoughtful code review comments",
       ],
     }, {
       "summary": "Communicates with the wider team appropriately, focusing on timeliness and good quality conversations",
       "signals": [
-        "Practises active listening and suspension of attention",
+        "Practises active listening",
         "Ensures stakeholders are aware of current blockers",
         "Chooses the appropriate tools for accurate and timely communication",
         "Highlights blockers or opportunities to cross-project teams in a constructive way",
